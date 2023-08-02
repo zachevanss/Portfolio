@@ -1,7 +1,181 @@
-nav ul {
+* {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(249, 249, 249);
+}
+
+header {
+    padding: 0 3rem;
+    background-color: black;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul {
     list-style-type: none;
 }
 
-#logo {
-    width: 200px;
+nav li {
+    float: left;
 }
+
+a {
+    text-decoration: none;
+}
+
+nav a {
+    color: white;
+    padding: 1rem 2rem;
+    font-family: 'Roboto Slab', 'Times New Roman', Times, serif;
+}
+
+nav a:hover {
+    color: rebeccapurple;
+}
+
+#logo {
+    width: 10rem;
+    float: right;
+}
+
+#banner {
+    height: 20rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./images/Cameras.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#banner h1 {
+    color: rgb(255, 255, 255);
+    font-family: Shrikhand, Impact, Haettenschweiler, sans-serif;
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
+    filter: drop-shadow(10px 10px 5px black);
+    text-align: center;
+}
+
+#choice, #about, #contact {
+    margin: 5rem 15rem;
+}
+
+#choice, #contact, #contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#choice1, #choice2 {
+    height: 8rem;
+    width: 18rem;
+    background-color: rebeccapurple;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1, h2, h3, h5 {
+    font-family: 'Varela Round', Arial, Helvetica, sans-serif;
+}
+
+#choice a {
+    color: white;
+    padding: 2rem;
+    transition: font-size 0.3s ease;
+}
+
+#choice a:hover {
+    font-size: 1.7rem;
+}
+
+p, h4, #skills li {
+    font-family: 'Roboto Slab', 'Times New Roman', Times, serif;
+}
+
+p {
+    margin-bottom: 4rem;
+}
+
+#skills li {
+    float: left;
+    margin-left: 2rem;
+}
+
+h3 {
+    padding: 1rem;
+}
+
+#zach {
+    width: 20rem;
+    border-radius: 20px;
+}
+
+#contact-info {
+    width: 20rem;
+}
+
+#contact-info h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+#contact-info h4 {
+    width: 50%;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+#contact-info a {
+    color: black;
+}
+
+#contact-info a:hover {
+    color: rebeccapurple;
+}
+
+footer {
+    background-color: black;
+    height: 6rem;
+}
+
+h5 {
+    color: white;
+    margin-left: 2rem;
+    padding-top: 0.6rem;
+}
+
+@media only screen and (max-width: 1100px) {
+    #choice1, #choice2 {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    #contact-info {
+        margin-top: 3rem;
+    }
+  }
+
+  @media only screen and (max-width: 870px) {
+    #choice, #about, #banner h1 {
+        margin: 5rem 5rem;
+    }
+    #logo {
+        display: none;
+    }
+    #contact-info h4 {
+        width: 100%;
+    }
+  }
