@@ -99,6 +99,10 @@ h1, h2, h3, h5 {
     font-size: 1.7rem;
 }
 
+#choice a:hover #choice1 {
+    background-color: rgb(126, 63, 188);
+}
+
 p, h4, #skills li {
     font-family: 'Roboto Slab', 'Times New Roman', Times, serif;
 }
